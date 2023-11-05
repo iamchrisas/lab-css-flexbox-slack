@@ -1,4 +1,4 @@
-/*
+/* /*
 background purple: #540B51
 background ivory: #F3EAE2
 button blue: #4285F4
@@ -8,3 +8,912 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+  
+  body {
+    margin: 0px;
+  }
+  
+  .slack-logo {
+    width: 100px;
+    height: fit-content;
+    margin-left: 15px;
+  }
+  
+  .header-nav {
+    background-color: #540b51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 767px;
+    height: 60px;
+  }
+  
+  .search-button {
+    background-color: #540b51;
+    border: none;
+    margin: 0px 10px 0px 10px;
+    align-self: center;
+    margin: 0;
+  }
+  
+  .search-button > img {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .menu-button {
+    background-color: #540b51;
+    border: none;
+    margin: 0px 10px 0px 10px;
+    align-self: center;
+  }
+  
+  .menu-button > img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  @media (width < 768px) {
+    .nav-bar-links {
+      display: none;
+    }
+    .hidden-mobile {
+      display: none;
+    }
+  }
+
+  
+  .header-banner {
+    background-color: #540b51;
+    max-width: 767px;
+  }
+  
+  h1 {
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-right: 216px;
+    margin-left: 216px;
+    font-size: 34px;
+  }
+  
+  #dif-colors {
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  #dif-colors strong {
+    color: #ecb12f;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 316px;
+    margin-left: 225px;
+    margin-right: 210px;
+  }
+  
+  .signup-button {
+    border: none;
+    padding: 10px 60px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #540b51;
+    border-radius: 3%;
+  }
+  
+  .google-button img {
+    background-color: white;
+    width: 20px;
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .google-button {
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5%;
+    margin-top: 8px;
+    padding: 10px 48px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .google-button span {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  
+  .product-img > img {
+    position: relative;
+    margin-right: 0;
+    margin-top: 20px;
+    width: 767px;
+    height: 500px;
+  }
+  
+  .companies-support {
+    background-color: #f3eae2;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .companies-support > p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  .companies-logos {
+    text-align: center;
+    max-width: 768px;
+  }
+  
+  #airbnb-img {
+    width: 180px;
+    height: 70px;
+    padding: 10px;
+    object-fit: contain;
+  }
+  
+  #nasa-img {
+    width: 110px;
+    height: 70px;
+    padding: 10px;
+    object-fit: contain;
+  }
+  
+  #uber-img {
+    width: 100px;
+    height: 70px;
+    padding: 10px;
+    object-fit: contain;
+  }
+  
+  #target-img {
+    width: 84px;
+    height: 60px;
+    padding: 10px;
+    object-fit: contain;
+  }
+  
+  #nyt-img {
+    width: 230px;
+    height: 70px;
+    padding: 10px;
+    object-fit: contain;
+  }
+  
+  #spotify-img {
+    width: 180px;
+    height: 70px;
+    padding: 10px;
+    object-fit: contain;
+  }
+  
+  .section-team {
+    background-color: #f3eae2;
+    max-width: 767px;
+  }
+  
+  .bring-team {
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  
+  .bring-team p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .connect-mobile-img {
+    width: 500px;
+  }
+  
+  .channels-button:link {
+    text-decoration: none;
+    color: #2e71a6;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .arrow-icon {
+    width: 20px;
+    margin-left: 5px;
+  }
+  
+  .section-howtowork {
+    background-color: #f3eae2;
+    max-width: 767px;
+    height: 652px;
+  }
+  
+  .howtowork-text {
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  
+  .howtowork-text p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .flexibility-img {
+    width: 500px;
+    margin-top: 5px;
+    margin-left: 265px;
+  }
+  
+  .flexibility-button:link {
+    text-decoration: none;
+    color: #2e71a6;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .section-speedmobile {
+    background-color: #f3eae2;
+    max-width: 767px;
+    height: 652px;
+  }
+  
+  .speedmobile-img {
+    width: 500px;
+    margin-top: 5px;
+  }
+  
+  .speedmobile-text {
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+  
+  .speedmobile-text p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .platform-button:link {
+    text-decoration: none;
+    color: #2e71a6;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  
+  .section-support h3 {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-right: 216px;
+    margin-left: 216px;
+    margin-bottom: 0px;
+    font-size: 28px;
+  }
+  
+  .section-support > p {
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 216px;
+    margin-left: 216px;
+  }
+  
+  .slackcontact-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 316px;
+    margin-left: 225px;
+    margin-right: 210px;
+  }
+  
+  .meetslack-button {
+    background-color: #540b51;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 2%;
+    padding: 10px 65px;
+  }
+  
+  .talksales-button {
+    background-color: white;
+    border: 1px solid #540b51;
+    color: #540b51;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 2%;
+    margin-top: 8px;
+    padding: 10px 110px;
+  }
+  
+  .percentage-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .percentage-list li {
+    text-align: center;
+  }
+  
+  .percentage-list li span {
+    font-size: 32px;
+    font-weight: 600;
+    color: #540b51;
+  }
+  
+  .percentage-list p {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  
+  .welcome-section {
+    background-color: #540b51;
+    max-width: 767px;
+  }
+  
+  .welcome-section h3 {
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    margin-right: 216px;
+    margin-left: 216px;
+    margin-bottom: 0px;
+    font-size: 28px;
+  }
+  
+  .welcome-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 316px;
+    margin-left: 225px;
+    margin-right: 210px;
+  }
+  
+  .tryfree-button {
+    background-color: white;
+    color: #540b51;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 2%;
+    margin-bottom: 20px;
+    padding: 10px 110px;
+  }
+  
+  .talk-button {
+    background-color: #540b51;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 2%;
+    margin-bottom: 8px;
+    padding: 10px 110px;
+  }
+  
+  
+  .slack-logo-footer {
+    width: 55px;
+    margin: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 676px;
+    height: 390px;
+  }
+  
+  .footer-container ul {
+    list-style-type: none;
+  }
+  
+  .list-whyslack {
+    font-weight: 600;
+  }
+  
+  .list-title {
+    font-weight: 600;
+  }
+  
+  .footer-container li {
+    padding-bottom: 30px;
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  
+  .footer-list ul {
+    list-style-type: none;
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  
+  .footer-list li {
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  
+  .world-icon {
+    width: 20px;
+    margin-left: 0px;
+  }
+  
+  .change-region {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .change-region li {
+    padding-top: 10px;
+    padding-left: 8px;
+  }
+  
+  .dowmload-icon {
+    width: 20px;
+    margin-left: 0px;
+  }
+  
+  .dowmload-slack li {
+    padding-top: 10px;
+    padding-left: 8px;
+  }
+  
+  .dowmload-slack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #2e71a6;
+  }
+  
+  
+  .socialmedia-icons {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 676px;
+    padding-left: 20px;
+  }
+  
+  .socialmedia-icons li {
+    list-style-type: none;
+  }
+  
+  .copy-footer {
+    color: #454245;
+    font-size: 12px;
+    width: 676px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  
+  
+  @media (768px <= width <= 1024px) {
+    .header-nav {
+      max-width: 1024px;
+    }
+    .nav-bar-links {
+      display: none;
+    }
+    .hidden-mobile {
+      display: none;
+    }
+    .header-banner {
+      max-width: 1024px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 450px;
+    }
+    h1 {
+      text-align: left;
+      padding: 10px 10px;
+      margin-right: 740px;
+      margin-left: 10px;
+      margin-top: 8px;
+      font-size: 42px;
+    }
+    #dif-colors {
+      text-align: left;
+      margin-bottom: 15px;
+      margin-left: 20px;
+      margin-right: 815px;
+    }
+    .cta-buttons {
+      width: 316px;
+      margin-left: -18px;
+      margin-right: 210px;
+    }
+    .product-img > img {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      margin-top: 20px;
+      width: 390px;
+      height: 280px;
+    }
+    .companies-support {
+      max-width: 1024px;
+    }
+    .companies-logos {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      max-width: 1024px;
+    }
+    .connect-mobile-img {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    .section-team {
+      max-width: 1024px;
+    }
+    .bring-team {
+      margin-left: 200px;
+      margin-right: 398px;
+      line-height: 1.5rem;
+    }
+    .section-howtowork {
+      max-width: 1024px;
+      height: 652px;
+    }
+    .howtowork-text {
+      margin-left: 200px;
+      margin-right: 390px;
+      line-height: 1.5rem;
+    }
+    .flexibility-img {
+      margin-top: 46px;
+      margin-bottom: 46px;
+      margin-left: 498px;
+    }
+    .speedmobile-img {
+      width: 430px;
+      margin-top: 150px;
+    }
+    .section-speedmobile {
+      max-width: 1024px;
+      height: 830px;
+    }
+    .speedmobile-text {
+      margin-left: 200px;
+      margin-right: 390px;
+      line-height: 1.5rem;
+    }
+    .section-support > p {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      margin-right: 194px;
+    }
+    .slackcontact-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 450px;
+      margin-left: 260px;
+    }
+    .meetslack-button {
+      padding: 10px 40px;
+    }
+  
+    .talksales-button {
+      padding: 8px 40px;
+      margin-top: 0px;
+    }
+    .percentage-list {
+      display: flex;
+      flex-direction: row;
+      max-width: 1024px;
+      margin: 60px 60px;
+    }
+    .percentage-list p {
+      text-align: left;
+      font-size: 14px;
+      font-weight: 600;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .welcome-section {
+      max-width: 1024px;
+      height: 230px;
+    }
+    .welcome-buttons {
+      width: 545px;
+    }
+    .talk-button {
+      padding: 12px 195px;
+    }
+    .tryfree-button {
+      padding: 12px 195px;
+    }
+    .footer-container {
+      max-width: 1024px;
+    }
+    .footer-list ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .socialmedia-icons {
+      width: 282px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  
+  @media (1024px <=width <= 1440px) {
+    .header-nav {
+      max-width: 1440px;
+    }
+    .logo-navlinks {
+      display: flex;
+      flex-direction: row;
+    }
+    .slack-logo {
+      margin-top: 15px;
+    }
+    .nav-bar-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 350px;
+      list-style-type: none;
+    }
+    .nav-bar-links > li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .menu-button {
+      display: none;
+    }
+    .search-container {
+      display: flex;
+      flex-direction: row;
+    }
+    .search-button > img {
+      width: 30px;
+      height: 30px;
+    }
+    .hidden-mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 300px;
+      list-style-type: none;
+    }
+    .sign-button > a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .try-button > a {
+      background-color: white;
+      color: #540b51;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 2%;
+    }
+    .header-banner {
+      max-width: 1440px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 500px;
+    }
+    h1 {
+      text-align: left;
+      padding: 10px 10px;
+      margin-right: 1100px;
+      margin-left: 10px;
+      margin-top: 8px;
+      font-size: 42px;
+    }
+    #dif-colors {
+      text-align: left;
+      margin: 50px 1210px 15px 20px;
+    }
+    .cta-buttons {
+      width: 316px;
+      margin-left: -18px;
+      margin-right: 210px;
+    }
+    .product-img > img {
+      position: absolute;
+      bottom: 40%;
+      right: 5%;
+      width: 500px;
+      height: 350px;
+    }
+    .companies-support {
+      max-width: 1440px;
+      height: 250px;
+    }
+    .companies-logos {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: space-around;
+      max-width: 1440px;
+      margin-bottom: 40px;
+    }
+    .section-team {
+      max-width: 1440px;
+      display: flex;
+      flex-direction: row;
+    }
+    .connect-mobile-img {
+      width: 560px;
+      height: 400px;
+    }
+    .bring-team {
+      margin-left: 220px;
+      margin-right: 235px;
+    }
+    .bring-team h2 {
+      font-size: 42px;
+      line-height: 3.5rem;
+    }
+    .bring-team p {
+      font-size: 18px;
+      line-height: 2rem;
+    }
+    .channels-button:link {
+      font-size: 18px;
+    }
+    .arrow-icon {
+      display: none;
+    }
+    .section-howtowork {
+      max-width: 1440px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .flexibility-img {
+      width: 560px;
+      height: 480px;
+      margin-left: 100px;
+    }
+    .howtowork-text {
+      margin-top: 140px;
+      margin-left: 200px;
+      margin-right: 165px;
+    }
+    .howtowork-text h2 {
+      font-size: 42px;
+      line-height: 3.5rem;
+    }
+    .howtowork-text p {
+      font-size: 18px;
+      line-height: 2rem;
+    }
+    .flexibility-button:link {
+      font-size: 18px;
+    }
+    .section-speedmobile {
+      max-width: 1440px;
+      display: flex;
+      flex-direction: row;
+    }
+    .speedmobile-img {
+      width: 560px;
+      height: 500px;
+    }
+    .speedmobile-text {
+      margin-top: 30px;
+      margin-left: 220px;
+      margin-right: 235px;
+    }
+    .speedmobile-text h2 {
+      font-size: 42px;
+      line-height: 3.5rem;
+    }
+    .speedmobile-text p {
+      font-size: 18px;
+      line-height: 2rem;
+    }
+    .platform-button:link {
+      font-size: 18px;
+    }
+    .section-support h3 {
+      font-size: 42px;
+      margin-top: 75px;
+      margin-bottom: 25px;
+    }
+    .section-support p {
+      margin-bottom: 30px;
+    }
+    .slackcontact-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 485px;
+      margin-left: 440px;
+    }
+    .meetslack-button {
+      padding: 16px 48px;
+    }
+    .talksales-button {
+      margin-top: 0px;
+      padding: 14px 45px;
+    }
+    .percentage-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 1440px;
+      margin: 60px 120px;
+    }
+    .percentage-list p {
+      text-align: left;
+      padding-left: 26px;
+      padding-right: 50px;
+      width: 280px;
+    }
+    .percentage-list p > span {
+      font-size: 42px;
+    }
+    .welcome-section {
+      max-width: 1440px;
+      height: 220px;
+    }
+    .welcome-section h3 {
+      font-size: 42px;
+    }
+    .welcome-buttons {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      width: 416px;
+      margin-left: 480px;
+    }
+    .talk-button {
+      padding: 18px 52px;
+    }
+    .tryfree-button {
+      padding: 18px 52px;
+      margin-bottom: 8px;
+    }
+    .footer-container {
+      max-width: 1440px;
+    }
+    .footer-list ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 15px 0px;
+    }
+  }
+  
